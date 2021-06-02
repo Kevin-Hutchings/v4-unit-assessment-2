@@ -12,3 +12,90 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+body{
+  margin: 0;
+}
+
+.nav-bar{
+  background-color: rgb(37, 37, 37);
+  margin-top: 0;
+  padding: 10px;
+  height: 50px;
+  position: sticky;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#nav-title{
+  color: rgb(42, 171, 226);
+  position: relative;
+  right: 51%;
+}
+
+.nav-list{
+  list-style: none;
+  color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-body{
+  border: 1px solid black;
+  width: 80vw;
+  position: relative;
+  left: 8%;
+  display: flex;
+}
+
+.main-text{
+  border: 1px solid black;
+  width: 60%;
+}
+
+.profile-box{
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 80%;
+  top: -55%;
+  box-shadow: 0 0 45px rgba(102, 75, 75, .3);
+}
+
+.articles-list-box{
+  border: 1px solid black;
+  box-shadow: 0 0 45px rgba(102, 75, 75, .3);
+  width: 200px;
+  height: 350px;
+  line-height: 1.7;
+  position: relative;
+  left: 80%;
+  top: -51%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.bottom-bar{
+  height: 50px;
+  background-color: rgb(42, 171, 226);
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+#bottom-text{
+  position: relative;
+  left: 2%;
+}
+
+#help-icon{
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+}
