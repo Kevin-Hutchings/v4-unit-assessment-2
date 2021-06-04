@@ -45,10 +45,9 @@ body{
 
 .main-body{
   border: 1px solid black;
-  width: 80vw;
+  width: 80%;
   position: relative;
   left: 8%;
-  display: flex;
 }
 
 .main-text{
@@ -60,10 +59,19 @@ body{
   border: 1px solid black;
   height: 200px;
   width: 200px;
-  position: relative;
+  padding-top: 15px;
+  position: absolute;
   left: 80%;
-  top: -55%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 0 45px rgba(102, 75, 75, .3);
+}
+
+#profile-image{
+  height: 65%;
+  width: 65%;
 }
 
 .articles-list-box{
@@ -72,21 +80,45 @@ body{
   width: 200px;
   height: 350px;
   line-height: 1.7;
-  position: relative;
+  position: absolute;
   left: 80%;
-  top: -51%;
+  top: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+#image-gallery-title{
+  position: absolute;
+  left: 8%;
+  top: 90%;
+}
+
+.image-gallery{
+  border: 1px solid black;
+  width: 50vw;
+  position: absolute;
+  left: 8%;
+  top: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.placeholder-box{
+  height: 250px;
+  width: 250px;
+}
 
 .bottom-bar{
   height: 50px;
+  width: 100%;
   background-color: rgb(42, 171, 226);
   display: flex;
   align-content: center;
-  position: relative;
+  position: absolute;
+  bottom: -55%;
 }
 
 #bottom-text{
@@ -95,7 +127,5 @@ body{
 }
 
 #help-icon{
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
+
 }
