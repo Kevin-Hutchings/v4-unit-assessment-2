@@ -126,10 +126,9 @@ delete gameInfo.rating;
 
 //CODE HERE
 for (let key in shapes){
-    // if (shapes[key] % 2 !== 0){
-    //     delete shapes[key]
-    // }
-    // return shapes
+    if (shapes[key] % 2 !== 0){
+        delete shapes[key]
+    }
 }
 
 ////////////////////PROBLEM 9////////////////////
@@ -173,12 +172,11 @@ const classes = [
 
 //CODE HERE
 for(let i=0; i<classes.length; i++){
-    for(let key in classes){
-    //     if(key == true){
-    //         classes[key] = false;
-    //     }
+    for(let key in classes[i]){
+        if(classes[i][key] === true){
+            classes[i][key] = false;
+        }
     }
-    // return classes
 }
 
   
@@ -199,7 +197,7 @@ let pairsArray = []
 for(let i=0; i<lettersToPair.length; i++){
     for(let j=i+1; j<lettersToPair.length; j++){
         if(lettersToPair[i] === lettersToPair[j]){
-            pairsArray.push(lettersToPair[i], lettersToPair[j])
+            pairsArray.push([i, j])
         }
     }
 }
@@ -243,9 +241,9 @@ let fido = new Dog('Fido', 3, 'Jack Russell', ['sit', 'shake']);
 */
 
 //CODE HERE
-const bark = () => `${this.name} says bark!`
-
-
+let bark = function(){
+    return `${this.name} says bark!`
+} 
 
 /*
     Invoke the call method on bark, passing in fido as the context
@@ -265,8 +263,8 @@ let fidoSpeak = bark.call(fido);
 
 //CODE HERE
 function teachTrick (trick) {
-    let tricks = []
-    this.tricks.push
+    this.tricks.push(trick)
+    return this.tricks;
 }
 
 /*
@@ -286,7 +284,9 @@ let teachStay = teachTrick.bind(fido, 'stay')
 */
 
 //CODE HERE
-const dogIntro = (treat, toy)=> `${this.name} is a ${this.breed} that loves ${this.treat} and their ${this.toy}!`
+const dogIntro = (treat, toy) => {
+    return `${this.name} is a ${this.breed} that loves ${this.treat} and their ${this.toy}!`
+}
 
 
 /*
@@ -343,7 +343,6 @@ let phone3 = new Phone('Samsung', 'Galaxy', 128, 'Blue', false);
 //CODE HERE
 
 Phone.prototype.sell = function(){
-    Phone.sold = true;
-    
+    this.sold = true;
     return `${this.brand} ${this.model} has been sold.`
 }

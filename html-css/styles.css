@@ -44,19 +44,18 @@ body{
 }
 
 .main-body{
-  border: 1px solid black;
   width: 80%;
   position: relative;
   left: 8%;
 }
 
 .main-text{
-  border: 1px solid black;
   width: 60%;
+  font-size: medium;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .profile-box{
-  border: 1px solid black;
   height: 200px;
   width: 200px;
   padding-top: 15px;
@@ -75,7 +74,6 @@ body{
 }
 
 .articles-list-box{
-  border: 1px solid black;
   box-shadow: 0 0 45px rgba(102, 75, 75, .3);
   width: 200px;
   height: 350px;
@@ -95,7 +93,6 @@ body{
 }
 
 .image-gallery{
-  border: 1px solid black;
   width: 50vw;
   position: absolute;
   left: 8%;
@@ -127,5 +124,7 @@ body{
 }
 
 #help-icon{
-
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
 }
